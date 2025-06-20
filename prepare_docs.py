@@ -4,7 +4,7 @@ from pathlib import Path
 
 SOURCE_DIR = Path(".")
 DOCS_DIR = Path("docs")
-EXCLUDE_FILES = {"README.md", "mkdocs.yml"}
+EXCLUDE_FILES = {"mkdocs.yml"}
 
 LICENSE_LINK = "https://github.com/TamerOnLine/indexMD/blob/main/LICENSE"
 

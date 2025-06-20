@@ -5,7 +5,7 @@ import sys
 
 README_PATH = "README.md"
 OUTPUT_PATH = "docs/index.md"
-LICENSE_LINK = "https://github.com/PostgresCraft/encryption_service/blob/main/LICENSE"
+LICENSE_LINK = "https://github.com/TamerOnLine/indexMD/blob/main/LICENSE"
 
 def read_readme(path=README_PATH):
     """
