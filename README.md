@@ -4,6 +4,32 @@ A lightweight documentation generator powered by MkDocs and custom scripts to au
 
 ---
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![View Wiki](https://img.shields.io/badge/Wiki-Available-blue?logo=github)](https://github.com/TamerOnLine/indexMD/wiki/01.-Home)
+[![Docs](https://img.shields.io/badge/Docs-Available-brightgreen.svg)](./docs/)
+
+
+[![GitHub Stars](https://img.shields.io/github/stars/TamerOnLine/indexMD?style=social)](https://github.com/TamerOnLine/indexMD/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/TamerOnLine/indexMD?style=social)](https://github.com/TamerOnLine/indexMD/fork)
+[![GitHub Issues](https://img.shields.io/github/issues/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/pulls)
+
+
+[![Python Version](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
+[![MkDocs Version](https://img.shields.io/badge/MkDocs-1.5.3-blue.svg)](https://www.mkdocs.org/)
+[![Pip Version](https://img.shields.io/badge/Pip-23.2.1-blue.svg)](https://pypi.org/project/pip/)
+
+
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Enabled-blue.svg)](https://github.com/TamerOnLine/indexMD/actions)
+[![Code Quality](https://img.shields.io/badge/Code%20Quality-High-green.svg)](https://github.com/TamerOnLine/indexMD)
+[![Last Commit](https://img.shields.io/github/last-commit/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/commits)
+[![Contributors](https://img.shields.io/github/contributors/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/graphs/contributors)
+
+
+[![Built with ❤️ by Tamer](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20by%20Tamer-orange)](https://github.com/TamerOnLine)
+
+---
+
 📘 [Live Documentation](https://tameronline.github.io/indexMD/)
 
 ---
@@ -15,32 +41,9 @@ Explore the **official project Wiki** for complete technical documentation:
 
 ➡️ [View the Wiki](https://github.com/TamerOnLine/indexMD/wiki/01.-Home)
 
-> 📝 Maintained and regularly updated for all user levels: beginners, contributors, and advanced users.
-
-
----
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![View Wiki](https://img.shields.io/badge/Wiki-Available-blue?logo=github)](https://github.com/TamerOnLine/indexMD/wiki/01.-Home)
-[![GitHub Stars](https://img.shields.io/github/stars/TamerOnLine/indexMD?style=social)](https://github.com/TamerOnLine/indexMD/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/TamerOnLine/indexMD?style=social)](https://github.com/TamerOnLine/indexMD/fork)
-[![GitHub Issues](https://img.shields.io/github/issues/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/pulls)
-
-[![Python Version](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
-[![MkDocs Version](https://img.shields.io/badge/MkDocs-1.5.3-blue.svg)](https://www.mkdocs.org/)
-[![Pip Version](https://img.shields.io/badge/Pip-23.2.1-blue.svg)](https://pypi.org/project/pip/)
-
-[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Enabled-blue.svg)](https://github.com/TamerOnLine/indexMD/actions)
-[![Code Quality](https://img.shields.io/badge/Code%20Quality-High-green.svg)](https://github.com/TamerOnLine/indexMD)
-
-[![Contributors](https://img.shields.io/github/contributors/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/graphs/contributors)
-[![Last Commit](https://img.shields.io/github/last-commit/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/commits)
-[![License](https://img.shields.io/github/license/TamerOnLine/indexMD)](LICENSE)
+> 👤 📝 Maintained and regularly updated for all user levels: beginners, contributors, and advanced users.
 
 ---
-
-A lightweight documentation generator powered by MkDocs and custom scripts...
 
 <p align="center">
   <img src="screenshots/control-panel.gif" alt="indexMD CLI Control Panel" width="600"/>
@@ -60,11 +63,6 @@ A lightweight documentation generator powered by MkDocs and custom scripts...
 - [Project Structure 🧱](#project-structure)
 
 ---
-# Index Markdown Tools
-
-📚 A lightweight documentation generator powered by MkDocs and custom scripts to automate README-based documentation deployment.
-
----
 
 ## Features
 
@@ -75,6 +73,7 @@ A lightweight documentation generator powered by MkDocs and custom scripts...
 - 📖 **Multi-section support** (About, Contact, Privacy, Terms…)  
 - 🔗 **Important links section**
 
+<br>
 
 [🔝 Back to Top](#table-of-contents)
 
@@ -97,7 +96,9 @@ cd indexMD
   </a>
 </p>
 
-📽️ Quick Clone of the Encryption Service Tools in action  
+📽️ Quick Clone of the indexMD repository in action
+
+<br>
 
 [🔝 Back to Top](#table-of-contents)
 
@@ -118,7 +119,9 @@ py -3.12 -m venv venv
   <img src="screenshots/Windows.gif" alt="Encryption Service Tools Windows" width="600"/>
   </a>
 </p>
-📽️ Quick Windows of the Encryption Service Tools in action
+📽️ Quick setup of indexMD on Windows in action
+
+<br>
 
 [🔝 Back to Top](#table-of-contents)
 
@@ -147,6 +150,8 @@ python -m pip install --upgrade pip
 </p>
 📽️ Upgrading pip on Windows (recommended)
 
+<br>
+
 [🔝 Back to Top](#table-of-contents)
 
 ---
@@ -163,6 +168,8 @@ pip install -r requirements.txt
   </a>
 </p>
 📽️ Quick install of the index MD Tools in action
+
+<br>
 
 [🔝 Back to Top](#table-of-contents)
 
@@ -193,6 +200,8 @@ Build, Prepare, Serve, Deploy, or just Check version — all in one menu!
 | `4. Deploy` | Deploys the site to GitHub Pages using `mkdocs gh-deploy`. |
 | `5. Check Version` | Displays current versions of key tools like MkDocs. |
 | `6. Exit` | Exits the CLI interface. |
+
+<br>
 
 [🔝 Back to Top](#table-of-contents)
 
@@ -228,10 +237,21 @@ The following is the structure of the main project directory:
 └── requirements.txt
 
 ```
+<br>
 
 [🔝 Back to Top](#table-of-contents)
 
 ---
+
+## 📦 Install via pip (coming soon)
+
+This project will soon be available on PyPI for easy installation.
+
+Once published, you will be able to install it using:
+
+```bash
+pip install indexmd
+
 
 
 
