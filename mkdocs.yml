@@ -11,7 +11,7 @@ theme:
   name: material
   language: en
   custom_dir: docs/overrides
-  logo: screenshots/logo.png
+  logo: screenshots/logo.svg
   favicon: screenshots/favicon.ico
   features:
     - navigation.tabs
@@ -42,6 +42,7 @@ nav:
       - Important Links: sections/important-links.md
       - Privacy Policy: sections/privacy.md
       - Terms of Service: sections/terms.md
+      - Code of Conduct: CODE_OF_CONDUCT.md
 
 
 markdown_extensions:
