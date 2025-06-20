@@ -1,66 +1,29 @@
 import os
 import re
+from pathlib import Path
 
-README_PATH = "README.md"
-OUTPUT_PATH = "docs/index.md"
-LICENSE_LINK = "https://github.com/PostgresCraft/encryption_service/blob/main/LICENSE"
+SOURCE_DIR = Path(".")
+DOCS_DIR = Path("docs")
+EXCLUDE_FILES = {"README.md", "mkdocs.yml"}
 
-def read_readme(path=README_PATH):
-    """
-    Read the content of the README file.
-
-    Args:
-        path (str): Path to the README file.
-
-    Returns:
-        str: Content of the README file.
-    """
-    with open(path, "r", encoding="utf-8") as file:
-        return file.read()
+LICENSE_LINK = "https://github.com/TamerOnLine/indexMD/blob/main/LICENSE"
 
 def clean_content(content: str) -> str:
-    """
-    Clean unwanted sections from README content.
-
-    This removes direct display links, 'Back to Top' links, and
-    the table of contents section.
-
-    Args:
-        content (str): Raw README content.
-
-    Returns:
-        str: Cleaned README content.
-    """
     content = re.sub(r".*?\[Live Documentation\]\([^)]+\)\s*\n?", "", content)
     content = re.sub(r"\[.*?Back to Top.*?\]\([^)]+\)\s*\n?", "", content, flags=re.IGNORECASE)
     content = re.sub(r"## Table of Contents[\s\S]+?(?=\n## )", "", content)
     return content
 
 def fix_links(content: str) -> str:
-    """
-    Fix or update internal and external links in the content.
-
-    Args:
-        content (str): Cleaned README content.
-
-    Returns:
-        str: Content with updated links.
-    """
     content = content.replace("screenshots/", "screenshots/")
     content = content.replace("(../LICENSE)", f"({LICENSE_LINK})")
     content = content.replace("(LICENSE)", f"({LICENSE_LINK})")
     return content
 
-def write_to_docs(content: str, output_path=OUTPUT_PATH):
-    """
-    Write processed content to the documentation output file.
+def write_to_docs(filename: str, content: str):
+    output_path = DOCS_DIR / filename
+    os.makedirs(output_path.parent, exist_ok=True)
 
-    Args:
-        content (str): Final markdown content to write.
-        output_path (str): Destination path for the output file.
-    """
-
-        # إزالة الفراغات الفارغة الزائدة أعلى وأسفل المحتوى
     lines = content.splitlines()
     while lines and not lines[0].strip():
         lines.pop(0)
@@ -68,27 +31,23 @@ def write_to_docs(content: str, output_path=OUTPUT_PATH):
         lines.pop()
     content = '\n'.join(lines)
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as file:
         file.write(content)
 
-def main():
-    """
-    Main function to process README and write cleaned content to documentation.
-    """
-    print("Reading README.md...")
-    content = read_readme()
+def process_markdown_files():
+    md_files = [f for f in SOURCE_DIR.glob("*.md") if f.name not in EXCLUDE_FILES]
 
-    print("Cleaning content...")
-    content = clean_content(content)
+    for md_file in md_files:
+        print(f"Processing {md_file.name}...")
+        with open(md_file, "r", encoding="utf-8") as f:
+            content = f.read()
 
-    print("Fixing links...")
-    content = fix_links(content)
+        cleaned = clean_content(content)
+        fixed = fix_links(cleaned)
 
-    print(f"Saving to {OUTPUT_PATH}...")
-    write_to_docs(content)
+        write_to_docs(md_file.name, fixed)
 
-    print("README.md has been successfully converted to docs/index.md.")
+    print("All markdown files have been processed into the docs/ folder.")
 
 if __name__ == "__main__":
-    main()
+    process_markdown_files()

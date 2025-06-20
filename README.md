@@ -1,13 +1,50 @@
 
-# Index Markdown
+# 📦 indexMD – Markdown-Based Documentation Generator
+A lightweight documentation generator powered by MkDocs and custom scripts to automate README-based documentation deployment.
+
+---
 
 📘 [Live Documentation](https://tameronline.github.io/indexMD/)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"/>
-</p>
+---
+
+## 📖 Full Documentation – Wiki
+
+Need step-by-step guides on installation, usage, customization, or contributions?  
+Explore the **official project Wiki** for complete technical documentation:
+
+➡️ [View the Wiki](https://github.com/TamerOnLine/indexMD/wiki/01.-Home)
+
+> 📝 Maintained and regularly updated for all user levels: beginners, contributors, and advanced users.
+
 
 ---
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![View Wiki](https://img.shields.io/badge/Wiki-Available-blue?logo=github)](https://github.com/TamerOnLine/indexMD/wiki/01.-Home)
+[![GitHub Stars](https://img.shields.io/github/stars/TamerOnLine/indexMD?style=social)](https://github.com/TamerOnLine/indexMD/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/TamerOnLine/indexMD?style=social)](https://github.com/TamerOnLine/indexMD/fork)
+[![GitHub Issues](https://img.shields.io/github/issues/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/pulls)
+
+[![Python Version](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
+[![MkDocs Version](https://img.shields.io/badge/MkDocs-1.5.3-blue.svg)](https://www.mkdocs.org/)
+[![Pip Version](https://img.shields.io/badge/Pip-23.2.1-blue.svg)](https://pypi.org/project/pip/)
+
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Enabled-blue.svg)](https://github.com/TamerOnLine/indexMD/actions)
+[![Code Quality](https://img.shields.io/badge/Code%20Quality-High-green.svg)](https://github.com/TamerOnLine/indexMD)
+
+[![Contributors](https://img.shields.io/github/contributors/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/graphs/contributors)
+[![Last Commit](https://img.shields.io/github/last-commit/TamerOnLine/indexMD)](https://github.com/TamerOnLine/indexMD/commits)
+[![License](https://img.shields.io/github/license/TamerOnLine/indexMD)](LICENSE)
+
+---
+
+A lightweight documentation generator powered by MkDocs and custom scripts...
+
+<p align="center">
+  <img src="screenshots/control-panel.gif" alt="indexMD CLI Control Panel" width="600"/>
+</p>
 
 ---
 
